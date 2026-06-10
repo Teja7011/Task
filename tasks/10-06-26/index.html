@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Elements Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Learning Web Development</h1>
+        <h2>A Friendly, Hands-On Guide</h2>
+        <h3>Chapter One: Getting Started with HTML</h3>
+        <h4>Section 1.1: Building with Meaning</h4>
+        <h5>Topic: Working with Text</h5>
+        <h6>Subtopic: Quick Text Tweaks</h6>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Fun Ways to Format Your Text</h2>
+
+            <p>
+                When you start building websites, you'll want to play around with how your words look.
+                You can make text <b>bold just for looks</b>, or use <strong>strong to show it's actually
+                    important</strong>.
+                If you want a slight slant, you can make things <i>italic for style</i> or use <em>emphasis to change
+                    how a sentence sounds</em>.
+                Need to remember something? You can <mark>highlight it like a marker</mark>, or drop the size down for
+                <small>fine print and legal footnotes</small>.
+                If you're editing a draft, you can show <del>words you deleted with a line through them</del> and
+                <ins>new words with an underline</ins>.
+                Lastly, you can use <sup>superscripts for math formulas like E=mc²</sup> and <sub>subscripts for science
+                    specs like H₂O</sub>.
+            </p>
+
+            <div class="image-container">
+                <img src="https://images.ctfassets.net/csmo1ocz98kd/3Tnwd5Glw1QEvH0oLHOzV7/5f226b0b4b221b0c067f3a04d0bc20b6/iKeva_Hyderabad.jpg"
+                    alt="An open office working space with people collaborating at desks">
+                <span class="image-caption">A peek inside our daily office environment</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Lists We Use Every Day</h2>
+
+            <div class="list-container">
+                <div class="list-block">
+                    <h3>Cool Frontend Tools</h3>
+                    <ul>
+                        <li>HTML5 Semantic Elements</li>
+                        <li>CSS3 Flexbox & Grid layouts</li>
+                        <li>Modern JavaScript</li>
+                        <li>Popular frameworks (React, Vue, etc.)</li>
+                    </ul>
+                </div>
+
+                <div class="list-block">
+                    <h3>How We Build Projects</h3>
+                    <ol>
+                        <li>Sketch out a quick plan</li>
+                        <li>Write the basic HTML structure</li>
+                        <li>Make it look pretty with CSS</li>
+                        <li>Add some fun interactions with JS</li>
+                        <li>Make sure it works for everyone</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Meet the Team</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Team Member</th>
+                        <th>What They Do</th>
+                        <th>Current Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Employee A</td>
+                        <td>Backend Development</td>
+                        <td><span class="badge available">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Employee B</td>
+                        <td>Frontend Development</td>
+                        <td><span class="badge available">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Employee C</td>
+                        <td>Quality Assurance</td>
+                        <td><span class="badge busy">In Meeting</span></td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Employee D</td>
+                        <td>Database Admin</td>
+                        <td><span class="badge away">Away</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Say Hello!</h2>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-row">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="What should we call you?" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="How can we help you today?">
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Drop your thoughts or questions here..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
