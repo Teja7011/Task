@@ -1,0 +1,137 @@
+:root {
+    --primary-purple: blue;
+    --primary-hover: purple;
+    --bg-light-purple: white;
+    --text-dark: gray;
+    --text-muted: gray;
+    --border-light: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    color: var(--text-dark);
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    width: 18px;
+    height: 18px;
+    background-color: pink;
+    border-radius: 3px;
+    position: relative;
+}
+
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: var(--primary-purple);
+    top: 0;
+    left: 0;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: var(--primary-purple);
+}
+
+.arrow-down::after {
+    content: ' ▾';
+    font-size: 10px;
+}
+
+.arrow-up::after {
+    content: ' ▴';
+    font-size: 10px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: var(--primary-purple);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-demo {
+    text-decoration: none;
+    color: var(--primary-purple);
+    background-color: var(--bg-light-purple);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-started {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-purple);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-started:hover {
+    background-color: var(--primary-hover);
+}
