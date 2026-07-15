@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopKit — Premium Product Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">Shop<span>Kit</span></div>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search products by title...">
+      </div>
+      <button class="cart-btn" id="cartBtn">
+        🛒 Cart
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="category-bar" id="categoryBar"></nav>
+
+  <div class="sort-bar">
+    <span class="sort-label">Sort by price:</span>
+    <button class="sort-btn" id="sortLowHigh">Low → High</button>
+    <button class="sort-btn" id="sortHighLow">High → Low</button>
+    <button class="sort-btn" id="sortReset">Reset</button>
+  </div>
+
+  <main class="product-grid" id="productGrid">
+    <p class="status-msg" id="statusMsg">Loading products...</p>
+  </main>
+
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal-box">
+      <button class="modal-close" id="cartModalClose">&times;</button>
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <span>Grand Total:</span>
+        <span id="grandTotal">$0.00</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
